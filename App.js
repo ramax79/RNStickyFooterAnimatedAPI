@@ -102,7 +102,7 @@ export default () => {
               transform: [
                 {
                   translateY: scrollY.interpolate({
-                    inputRange,//[-1, 0, topEdge - 80, topEdge, topEdge + 1]
+                    inputRange, //[-1, 0, topEdge - 80, topEdge, topEdge + 1]
                     outputRange: [0, 0, 0, 0, -1],
                   }),
                 },
@@ -138,7 +138,7 @@ export default () => {
               326
             </Animated.Text>
           </View>
-          {/* <View style={{ flexDirection: 'row' }}>
+          <View style={{ flexDirection: 'row' }}>
             <Animated.View
               style={[
                 styles.icon,
@@ -182,7 +182,7 @@ export default () => {
             >
               <Entypo name="share-alternative" size={24} color="black" />
             </Animated.View>
-          </View> */}
+          </View>
         </Animated.View>
       )}
     </SafeAreaView>
@@ -203,7 +203,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     flexDirection: 'row',
-    
   },
   image: {
     width: '100%',
